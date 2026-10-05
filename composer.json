@@ -1,0 +1,37 @@
+{
+    "name": "redaxo/composer-plugin",
+    "type": "composer-plugin",
+    "description": "Composer integration of REDAXO projects",
+    "keywords": ["redaxo", "composer-plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yakamara Media GmbH & Co. KG",
+            "homepage": "https://yakamara.de"
+        },
+        {
+            "name": "REDAXO team & community",
+            "homepage": "https://redaxo.org"
+        }
+    ],
+    "homepage": "https://redaxo.org",
+    "support": {
+        "issues": "https://github.com/redaxo/core/issues",
+        "security": "https://github.com/redaxo/core/security/policy"
+    },
+
+    "require": {
+        "php": "^8.5",
+        "composer-plugin-api": "^2.9"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Redaxo\\ComposerPlugin\\": "src/"
+        }
+    },
+
+    "extra": {
+        "class": "Redaxo\\ComposerPlugin\\Plugin"
+    }
+}
